@@ -19,7 +19,7 @@ pipeline {
 
         stage('Start Container on Port 8081') {
             steps {
-                sh 'docker run -d --name portfolio-demo -p 8081:80 saq-portfolio:latest'
+                sh 'docker run -d --name portfolio-demo -p 8081:80 saq-portfolio:latest .'
             }
         }
     }
